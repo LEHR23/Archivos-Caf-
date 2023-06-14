@@ -1,0 +1,258 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/** Globales **/
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+h1, h2, h3, h4 {
+    font-family: 'PT Sans', sans-serif;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4{
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+
+.texto{
+    text-align: center;
+}
+
+.boton{
+    background: black;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.btncafe{
+    background: #784d3c;
+}
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+        padding: 1rem 3rem; 
+        width: auto;
+    }
+}
+.cont-principal{
+    height: 100%;
+}
+.header-principal {
+    height: 100vh;
+    background: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+.cabecera-principal h1{
+    margin: 0;
+    font-weight: 300;
+}
+.cabecera-principal span{
+    font-weight: 600;
+}
+.cabecera-principal a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.cabecera-principal nav a{
+    display: block;
+}
+@media (min-width: 768px){
+    .cabecera-principal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cabecera-principal nav a{
+        display: inline;
+        margin-right: 3rem;
+    }
+}
+.header-slogan {
+    text-align: center;
+    margin-top: 5.5rem;
+}
+.header-slogan p{
+    font-size: 2rem;
+    margin: 0;
+}
+.header-slogan h2{
+    margin-bottom: 0;
+}
+@media (min-width: 768px){
+    .header-slogan{
+        margin-top: 15rem;
+    }
+}
+
+.contenido-principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cursos{
+    order: -1;
+}
+@media (min-width: 768px){
+    .contenido-principal{
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .blogs{
+        flex-basis: 63%;
+    }
+    .cursos{
+        order: 2;
+        flex-basis: 35%;
+    }
+}
+.cursos li{
+    list-style: none;
+    border-bottom: 1px solid #e1e1e1;
+}
+.cursos h4{
+    margin: 0;
+}
+.cursos p{
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+.cursos span{
+    font-weight: 700;
+}
+.blogs article{
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 2rem;
+}
+.footer-principal{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 2.5rem;
+    align-items: center;
+}
+.footer-principal p{
+    font-size: 3.8rem;
+    margin: 0;
+}
+.footer-principal span{
+    font-weight: 900;
+}
+
+
+
+@media (min-width: 768px){
+    .nosotros-principal{
+        display: flex;
+        justify-content: space-between;
+    }
+    .nosotros-contenido{
+        flex-basis: 49%;
+    }
+    .nosotros-img{
+        flex-basis: 49%;
+    }
+    
+}
+.cursos{
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+.cursos h3{
+    margin: 0;
+}
+.descripcion{
+    padding-top: 2rem;
+}
+.cursosytalleres h3{
+        margin: 0;
+    }
+.cursosytalleres{
+    margin-top: 2rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+@media (min-width: 768px){
+    .cursosytalleres{
+        display: flex;
+        justify-content: space-between;
+    }
+    .curso-img{
+        flex-basis: 30%;
+    }
+    .curso-contenido{
+        flex-basis: 69%;
+    }
+}
+
+.contacto-contenido{
+    display: flex;
+    flex-wrap: wrap;
+}
+.formulario{
+    width: 80%;
+    margin: auto;
+    padding: 4rem 2rem;
+    background-color: white;
+}
+@media (min-width: 768px){
+    .formulario{
+        margin-top: -10rem;
+    }
+}
+.campo{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+.campo label{
+    flex-basis: 20%;
+}
+
+input:not([type="submit"]),textarea{
+    border: 1px solid #e1e1e1;
+    display: block;
+    flex: 1;
+    padding: 1rem;
+}
+textarea{
+    height: 20rem;
+}
+.btnenviar{
+    display: flex;
+    justify-content: flex-end;
+}
